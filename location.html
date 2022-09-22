@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Tracking </title>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjy7vMVuqBmt2vSpsO4s2JUzPQFzVaYbE&callback=initMap">
+        </script>
+
+    <style>
+        body h2 {
+            text-align: center;
+            margin: 10px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            height: 700px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Track Your Order here!</h2>
+
+    <div id="map">
+
+    </div>
+    <script>
+        $('#location-button').click(function () {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function (position) {
+
+                    console.log(position);
+                    $.get("http://maps. googleapis. com/maps/api/geocode/json?latIng=" +
+                        position.coords.latitude + "," + position.coords.longitude
+                        + "&sensor=false", function (data) {
+                            console.log(data);
+                        })
+                            var img = new Image();
+                            ing.src = "https://maps . googleapis. com/maps/api/staticmap?center="
+                            position.coords.latitude + "," + position.coords.longitude +
+                                "&zoom=13&size=800x400&sensor=false";
+                            $('#output ').html(img);
+                        });
+                }
+
+            });
+
+    </script>
+
+    <script src="/locat.js"></script>
+</body>
+
+</html>

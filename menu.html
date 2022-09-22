@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Menu</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<style>
+    @keyframes menupic {
+      from{
+        height: 80px;
+        width: 80px;
+      }
+      to{
+        height: 250px;
+        width: 300px;
+      }
+    }
+    .menu-item-image {
+    width: 300px;
+    height: 250px;
+    flex-shrink: 0;
+    object-fit: cover;
+    margin-right: 1.5em;
+    /* animation: menupic 3s ease-in-out 2s infinite  alternate-reverse;
+     */
+     cursor: pointer;
+  }
+  
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5em;
+  }
+
+  .menu {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+  }
+
+  .menu-group-heading {
+    margin: 0;
+    padding-bottom: 1em;
+    border-bottom: 2px solid #ccc;
+  }
+
+  .menu-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+    padding: 1.5em 0;
+  }
+
+  .menu-item {
+    display: flex;
+  }
+
+  
+  .menu-item-text {
+    flex-grow: 1;
+  }
+
+  .menu-item-heading {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .menu-item-name {
+    margin-right: 1.5em;
+  }
+
+  .menu-item-description {
+    line-height: 1.6;
+  }
+
+  @media screen and (min-width: 992px) {
+    .menu {
+      font-size: 16px;
+    }
+
+    .menu-group {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu-item-image {
+      width: 200px;
+      height: 200px;
+    }
+  }
+</style>
+
+<body>
+  <div class="container">
+    <div class="menu">
+      <h2 class="menu-group-heading">
+        South-Indain Food
+      </h2>
+      <div class="menu-group">
+        <div class="menu-item">
+          <img class="menu-item-image"
+            src="https://www.thespruceeats.com/thmb/A_g1pdGtPZBJyJ9ycu18iDzegL4=/1887x1415/smart/filters:no_upscale()/idli-56a510b63df78cf772862c34.jpg"
+            alt="Bruschetta">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Idli</span>
+              <span class="menu-item-price">250 Rs/-</span>
+            </h3>
+            <p class="menu-item-description">
+              Idli is a type of savoury rice cake, originating from the Indian subcontinent, popular as breakfast foods
+              in
+              Eastern and Southern India and in Sri Lanka. The cakes are made by steaming a batter consisting of
+              fermented black lentils (de-husked) and rice.
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-image" src="https://maayeka.com/wp-content/uploads/2014/08/masala-dosa-recipe.jpg"
+            alt="Bruschetta">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Dosa</span>
+              <span class="menu-item-price">100 Rs/-</span>
+            </h3>
+            <p class="menu-item-description">
+              A dosa is a thin batter-based pancake originating from South India, made from a fermented batter
+              predominantly consisting of lentils and rice. Its main ingredients are rice and black gram, ground
+              together in a fine, smooth batter with a dash of salt, then fermented.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="menu-item">
+          <img class="menu-item-image" src="https://i.ndtvimg.com/i/2017-08/chicken-chettinad_620x330_71504097664.jpg"
+            alt="Bruschetta">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Chicken Chettinad</span>
+              <span class="menu-item-price">100 Rs/-</span>
+            </h3>
+            <p class="menu-item-description">
+              Full of flavour and bold masalas, this dish will floor your family and guests. A gorgeous melange of
+              onions, tomatoes, cinnamon sticks, cloves, cumin, curry leaves and a rich coconut-y paste.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="menu-item">
+          <img class="menu-item-image"
+            src="https://i.ndtvimg.com/i/2017-08/andhra-chicken-curry_620x330_41504097796.jpg" alt="Bruschetta">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Andhra Style Chicken Curry</span>
+              <span class="menu-item-price">100 Rs/-</span>
+            </h3>
+            <p class="menu-item-description">
+              A fiery Andhra curry cooked with ginger-garlic paste, curry leaves, cinnamon, chicken masala and a
+              delectable cashew and poppy seed paste.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="menu-item">
+          <img class="menu-item-image" src="https://i.ndtvimg.com/i/2015-06/sambhar_625x350_71434960456.jpg"
+            alt="Bruschetta">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Pickles and Pappadams </span>
+              <span class="menu-item-price">100 Rs/-</span>
+            </h3>
+            <p class="menu-item-description">
+              Pickles and Pappadams are always served on the side and yogurt makes a frequent appearance as well.
+              Coconut is one of the most important ingredients and is used in various forms: dry, desiccated or as is.
+              Some of the cooking is also done in coconut oil. The South of India is known as 'the land of spices' and
+              for all the right reasons.
+            </p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img class="menu-item-image" src="https://i.ndtvimg.com/i/2017-03/kadala-curry_620x350_51490966850.jpg"
+            alt="Bruschetta">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Kerala fish curry</span>
+              <span class="menu-item-price">100 Rs/-</span>
+            </h3>
+            <p class="menu-item-description">
+              Kerala fish curry, pomfret moilee, soft and fluffy appams with stew, Puttu and Kadala curry, Kerala beef
+              fry, chemmeen theeyal (prawn curry) - the food from Kerala isn't heavily spiced but the cooking techniques
+              used makes is absolutely ingenious.
+            </p>
+          </div>
+        </div>
+      </div>
+      <h2 class="menu-group-heading">
+        Dessert
+      </h2>
+      <div class="menu-group">
+        <div class="menu-item">
+          <img class="menu-item-image"
+            src="https://realfood.tesco.com/media/images/RFO-1400x919-classic-chocolate-mousse-69ef9c9c-5bfb-4750-80e1-31aafbd80821-0-1400x919.jpg"
+            alt="Bruschetta">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Chocolate Icecream</span>
+              <span class="menu-item-price">200 Rs/-</span>
+            </h3>
+            <p class="menu-item-description">
+              Chocolate ice cream is a flavour of ice cream which is the second most common flavour of ice cream, after
+              vanilla. Chocolate ice cream is made by blending in cocoa powder in along with the eggs (optional), cream,
+              vanilla and sugar used to make ice cream. The cocoa powder gives the ice cream a brown colour.
+
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-image" src="https://eatlittlebird.com/wp-content/uploads/2020/03/angel-food-cake-7.jpg"
+            alt="Bruschetta">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Angel Cake</span>
+              <span class="menu-item-price">400 Rs/-</span>
+            </h3>
+            <p class="menu-item-description">
+              Angle cake is also is an incredible source of energy. Ice cream is rich with carbohydrates, fats, and
+              proteins, which are all, needed for our bodies to produce energy.
+            </p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img class="menu-item-image"
+            src="https://thescranline.com/wp-content/uploads/2021/09/Lamington-Cake-01-500x500.jpg" alt="Bruschetta">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Lamington Cake</span>
+              <span class="menu-item-price">400 Rs/-</span>
+            </h3>
+            <p class="menu-item-description">
+              lamington was named for Lord Lamington, who served as Governor of Queensland from 1896 to 1901, or perhaps
+              his wife, Lady Lamington.Its is a tasty icecream.
+
+            </p>
+          </div>
+        </div>
+
+
+        <div class="menu-item">
+          <img class="menu-item-image"
+            src="https://img.jakpost.net/c/2020/10/02/2020_10_02_105218_1601621041._large.jpg" alt="Bruschetta">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Moon Cake</span>
+              <span class="menu-item-price">300 Rs/-</span>
+            </h3>
+            <p class="menu-item-description">
+              A full moon symbolizes prosperity and reunion for the whole family. Round mooncakes complement the harvest
+              moon in the night sky at the Mid-Autumn Festival. The mooncake is not just a food.
+            </p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img class="menu-item-image"
+            src="https://i0.wp.com/gurgaonbakers.com/wp-content/uploads/2020/10/delectable-fresh-fruit-cake.jpg"
+            alt="Bruschetta">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Fruit Cake</span>
+              <span class="menu-item-price">350 Rs/-</span>
+            </h3>
+            <p class="menu-item-description">
+              Fruitcake (or fruit cake or fruit bread) is a cake made with candied or dried fruit, nuts, and spices, and
+              optionally soaked in spirits. In the United Kingdom, certain rich versions may be iced and decorated.
+              Fruitcakes are typically served in celebration of weddings and Christmas.
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-image"
+            src="https://insanelygoodrecipes.com/wp-content/uploads/2021/10/Homemade-Halloween-Cake-with-Pumpkin-and-Bat-Decorations.jpg"
+            alt="Bruschetta">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Halloween Cake</span>
+              <span class="menu-item-price">400 Rs/-</span>
+            </h3>
+            <p class="menu-item-description">
+              Both ice cream and cake have sugar and dairy in them. But cake additionally has frosting. Frosting
+              contains a high fat and sugar content. So, the same serving of ice cream and cake may vary a lot in
+              nutritional value.
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <h2 class="menu-group-heading">
+        North-Indain Food
+      </h2>
+      <div class="menu-group">
+        <div class="menu-item">
+          <img class="menu-item-image"
+            src="https://www.crazymasalafood.com/wp-content/images/alloo-gobi.jpg"
+            alt="Bruschetta">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Aloo Gobi</span>
+              <span class="menu-item-price">180 Rs/-</span>
+            </h3>
+            <p class="menu-item-description">
+              This is the most cooked dish during any weekday in any typical North Indian household. This cuisine that tastes best with roti or rice whichever may be preferred is a main course that includes cauliflower, potatoes, garam masala, turmeric powder, and other spices as per taste!
+It is mostly served dry or is even enjoyed as a curry dish.
+
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-image" src="https://eatlittlebird.com/wp-content/uploads/2020/03/angel-food-cake-7.jpg"
+            alt="Bruschetta">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Bhindi Masala</span>
+              <span class="menu-item-price">120 Rs/-</span>
+            </h3>
+            <p class="menu-item-description">
+              This vegetarian dish that is preferred by many North Indians, also serves as a staple dish for many families. The various spices that add up to the dish make it even more tempting. It is enjoyed best with roti or paratha. It can be served as small chopped okra or thin long strips with stuffed masala.
+
+
+            </p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img class="menu-item-image"
+            src="https://www.crazymasalafood.com/wp-content/images/bhindi-masala-4.jpg" alt="Bruschetta">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Lamington Cake</span>
+              <span class="menu-item-price">400 Rs/-</span>
+            </h3>
+            <p class="menu-item-description">
+              lamington was named for Lord Lamington, who served as Governor of Queensland from 1896 to 1901, or perhaps
+              his wife, Lady Lamington.Its is a tasty icecream.
+
+            </p>
+          </div>
+        </div>
+
+
+        <div class="menu-item">
+          <img class="menu-item-image"
+            src="https://www.crazymasalafood.com/wp-content/images/aloo-paratha-4.jpg" alt="Bruschetta">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Aalo Paratha</span>
+              <span class="menu-item-price">60 Rs/-</span>
+            </h3>
+            <p class="menu-item-description">
+              This is one of the most common main dish that can be served at any time of the day, be it breakfast, lunch, evening snack or even dinner! It is a dish with an universal appeal. This is enjoyed by all the generations throughout the family, although rich but the alluring taste as it is tossed by butter and is something that can’t be said no to! 
+            </p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img class="menu-item-image"
+            src="https://www.crazymasalafood.com/wp-content/images/rajma-5.jpg"
+            alt="Bruschetta">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Rajma Masala Curry</span>
+              <span class="menu-item-price">150 Rs/-</span>
+            </h3>
+            <p class="menu-item-description">
+              This is considered as one of the most popular North Indian curry dish. Rajma (Red kidney beans) is usually made in the form of thick curry with rich and delicious blended spices. This is relished most with jeera rice, parathas or even plain rice.  This vegetarian dish is also supposed to be originated from Punjab. It is topped with coriander leaves and chopped onions.
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-image"
+            src="https://www.crazymasalafood.com/wp-content/images/maai.jpg">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Malai Kofta</span>
+              <span class="menu-item-price">100 Rs/-</span>
+            </h3>
+            <p class="menu-item-description">
+              This is one such classic curry recipe that you not only salivate when heard upon but the feeling of craving more and more still lingers! However originated from the Mughlai cuisine, Malai refers to the cream that is added to the dish and Kofta are small balls that are made out of paneer and are let out in the rich and thick curry or gravy made out of tomatoes and cashew nuts and other such ingredients. It is enjoyed with both parathas and any kind of rice!
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-image"
+            src="https://www.crazymasalafood.com/wp-content/images/kachori-6.jpg">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Kachori</span>
+              <span class="menu-item-price">20 Rs/-</span>
+            </h3>
+            <p class="menu-item-description">
+              This spicy side snack that is enjoyed by most states of North India such as Delhi, Rajasthan, Gujarat, Madhya Pradesh, Maharashtra, Uttar Pradesh, etc. It is a puri that is stuffed with moong dal mixture which in turn has many different flavors of spices. It tastes best when served hot! It is also commonly known as Khasta!
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-image"
+            src="https://www.crazymasalafood.com/wp-content/images/dumaloo.jpg">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Dum Aloo</span>
+              <span class="menu-item-price">120 Rs/-</span>
+            </h3>
+            <p class="menu-item-description">
+              This mouthwatering cuisine is originated from the state of Kashmir. This is one of the most coveted potato recipe of Indian cooking. Indians typically fall in love with this particular dish because of the texture and the flavor of the gravy in which small pieces of potatoes have a creamy touch to it. Some of them prefer to use sweet potatoes whereas others go for the normal ones.
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-image"
+            src="https://www.crazymasalafood.com/wp-content/images/dal-baati-1.jpg">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Dal Baati</span>
+              <span class="menu-item-price">60 Rs/-</span>
+            </h3>
+            <p class="menu-item-description">
+              Dal Baati is a North Indian dish and is famous for the complex recipe! It is originated in Rajasthan, and thus is a famous Rajasthani dish that is served in all North Indian states. The dal comprises of 5 kinds of dal (lentils) such as tuvaar dal, Chana dal, Mung dal, Moth dal, Urad Dal. Whereas the Baati are small balls of wheat flour and is prepared in an electronic oven. It is a very rich dish and must be tried if not already!
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-image"
+            src="https://www.crazymasalafood.com/wp-content/images/dhokla-12.jpg">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Dhoklas</span>
+              <span class="menu-item-price">80 Rs/-</span>
+            </h3>
+            <p class="menu-item-description">
+              Khaman Dhokla is a vegetarian steamed food item that is popular in the state of Gujarat as it is originated from there. The Gujratis prefer it as a side dish or even consider it as a breakfast item. It is prepared with rice and split chickpeas. It can be served hot, cold or even in normal food temperature. Best served with green chutney!
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-image"
+            src="https://www.crazymasalafood.com/wp-content/images/samosa-18.jpg">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Samosa</span>
+              <span class="menu-item-price">20 Rs/-</span>
+            </h3>
+            <p class="menu-item-description">
+              This is one of notable and consumed snack among the Indians! A regular evening or a tea party is definitely incomplete if a plate of samosas is not served to the guests. However this triangular shaped crispy and spicy Indian snack is best enjoyed with sweet red chutney whereas the other half prefer it with ketchup or even green chutney.
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-image"
+            src="https://www.crazymasalafood.com/wp-content/images/pakora-1.jpg">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Pakoras</span>
+              <span class="menu-item-price">20 Rs/-</span>
+            </h3>
+            <p class="menu-item-description">
+              What is a perfect way to spend a rainy or a wintery day inside house? Get a plate of Pakoras and you are ready to go. This dish that never gets out of style is renowned among the North Indian household as there is no particular time to prepare this snack. It is the easiest recipe in the list of snacks! However rich in its attire, it is best served with tomato sauce or any kind of preferred chutney!
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-image"
+            src="https://www.crazymasalafood.com/wp-content/images/pani-puri-8.jpg">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Pani Puri</span>
+              <span class="menu-item-price">10 Rs/-</span>
+            </h3>
+            <p class="menu-item-description">
+              You haven’t enjoyed your trip to India, if you didn’t eat pani puri. This roadside snack is available in almost all the corners of the length and breadth of India. Originated in the northern region of India, it consists of a puri that is filled with pani that is prepared using several spices and a filing that can be made of chickpeas or potatoes and onions. In East India it is renowned as Phuchhka while in North India, it is known as Golgappa!
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-image"
+            src="https://www.crazymasalafood.com/wp-content/images/dal-makhini.jpg">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Dal Makhani</span>
+              <span class="menu-item-price">100 Rs/-</span>
+            </h3>
+            <p class="menu-item-description">
+              This main course dish is a famous dish when comes to traditional north Indian curry. Originated in Punjab, Dal Makhani is served best with any form of rice such as fried rice, jeera rice, etc. and tastes best with Naan as well. This rich cuisine comprises of rajma and urad dal with other spices and is topped with some cream as it adds to the richness of the dish!
+
+
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-image"
+            src="https://www.crazymasalafood.com/wp-content/images/Aloo-Tikki.jpg">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Aaloo Tikki Chaat</span>
+              <span class="menu-item-price">50 Rs/-</span>
+            </h3>
+            <p class="menu-item-description">
+              This north Indian roadside snack is best known for the delicious taste! This small cutlet like tikki is made out of potato and other curry spices and is served with various toppings such as coriander leaves, onions, yoghurt and red chutney!
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-image"
+            src="https://www.crazymasalafood.com/wp-content/images/chicken-tikka-3.jpg">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Chicken Tikka Masala</span>
+              <span class="menu-item-price">180 Rs/-</span>
+            </h3>
+            <p class="menu-item-description">
+              This irresistible dish that is served in almost all over India, is one of the best Chicken dishes! Originated in Punjab, this rich cuisine roasted chunks of chicken tikka in a gravy that is of orange color which is blended with variety of spices giving a spicy taste and is best served with Naan!
+
+
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-image"
+            src="https://www.crazymasalafood.com/wp-content/images/pav-baji-2.jpg">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Pav Bhaji</span>
+              <span class="menu-item-price">80 Rs/-</span>
+            </h3>
+            <p class="menu-item-description">
+              This roadside fast food that originated in Maharashtra is considered as one of the top and enjoyed snack because of the ironic combination of bread and a vegetable curry. The vegetable curry is made from various vegetables such as carrots, cabbage, cauliflower, eggplant, etc whereas the bread commonly known as Pav tossed with butter is served alongside with it.
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-image"
+            src="https://www.crazymasalafood.com/wp-content/images/chole-batura.jpg">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Chole Bhature</span>
+              <span class="menu-item-price">100 Rs/-</span>
+            </h3>
+            <p class="menu-item-description">
+              This one of the most popular Punjabi recipe is famous because of the combination of the bhatura, the over fluffed bread and the spicy chole that is served in various forms, such as dry and with curry. It is best enjoyed with onions and a lemon as per taste.
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-image"
+            src="https://www.crazymasalafood.com/wp-content/images/Mutton.Kadai-620.jpg">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Kadai Paneer</span>
+              <span class="menu-item-price">170 Rs/-</span>
+            </h3>
+            <p class="menu-item-description">
+              This mouth-watering dish of paneer is loved by almost all the Indians because of the spiciness that all the ingredients that add up to this cuisine. It is served in a kadai as the taste tastes better when served in kadai as the name suggests itself. Originated in the Northern region, this dish is enjoyed with both naan and rice.
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-image"
+            src="https://www.crazymasalafood.com/wp-content/images/biriyani-1.jpg">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Biryani</span>
+              <span class="menu-item-price">200 Rs/-</span>
+            </h3>
+            <p class="menu-item-description">
+              Biryani, the king of all. The lover of biryani will automatically sense that Biryani is being cooked, by the versatile aroma of this dish. It is served in all parts of India however originated in the Muslim parts of India has various modifications as per the differences in states. It is served mostly as chicken biryani or mutton biryani! However beautiful in its looks, the aroma plays the key role in this dish.
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-image"
+            src="https://www.crazymasalafood.com/wp-content/images/tandoori-3.jpg">
+          <div class="menu-item-text">
+            <h3 class="menu-item-heading">
+              <span class="menu-item-name">Tandoori Chicken</span>
+              <span class="menu-item-price">250 Rs/-</span>
+            </h3>
+            <p class="menu-item-description">
+              The top most enjoyed North Indian dish, is obviously has to be a chicken dish! This Mughlai cuisine happens to be originated in Punjab and is served as an appetizer or even a starter in some restaurants but in majority it is the same old main course as the lingering taste is something hard to say goodbye to. Rich in its attire, and delicious in its taste, this is one of the famous north Indian dish and should not be missed out on!
+            </p>
+          </div>
+        </div>
+
+      </div>
+    
+    </div>
+  </div>
+</body>
+
+</html>

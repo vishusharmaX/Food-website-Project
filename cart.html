@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>Order</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        header {
+            background-color: #343a40;
+            color: white;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            position: sticky;
+            z-index: 1;
+            top: 0;
+        }
+
+        ul {
+            display: flex;
+
+        }
+
+        li {
+            list-style: none;
+            margin: 9px;
+            padding: 0 40px;
+            font-size: 25px;
+        }
+
+        li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .product-header {
+            display: flex;
+            flex-direction: row;
+            margin: 20px 0;
+            margin-left: 455px;
+        }
+
+        h5 {
+            margin: 0 54px;
+        }
+
+        hr {
+            width: 640px;
+            margin: 0 auto;
+
+        }
+
+        .con {
+            display: flex;
+        }
+
+        .btn-makepayment {
+            border: 2px solid black;
+            width: 120px;
+            height: 55px;
+            padding: 3px;
+            margin: 50px auto;
+            background-color: #343a40;
+            color: aliceblue;
+            font-size: 16px;
+
+        }
+
+        .btn-makepayment:hover {
+            background-color: whitesmoke;
+            color: #343a40;
+        }
+
+        .con a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .itemscontainer {
+            display: block;
+            margin-top: 14px;
+            margin-bottom: 20px;
+            /* border: 2px solid black; */
+        }
+
+        .items {
+            align-items: center;
+            display: flex;
+
+        }
+
+        .close {
+            width: 100px;
+            height: 40px;
+            /* border: 2px solid black; */
+            margin: 18px;
+            margin-left: 370px;
+
+        }
+
+        .items h3,
+        h4 {
+            margin: 0 70px;
+        }
+
+        .total hr {
+            width: 640px;
+            margin: 0 auto;
+        }
+
+        .total h3 {
+            position: absolute;
+            margin-top: 10px;
+            left: 1016px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/aboutus.html">About us</a></li>
+                <li><a href="/contact.html">Contact us</a></li>
+                <li class="cart">
+                    <a href="cart.html">
+                        <i class="fa-solid fa-1x fa-cart-shopping cartfont"></i> Cart 0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="product-container">
+        <div class="product-header">
+            <h5 class="product-title">PRODUCT</h5>
+            <h5 class="price ">PRICE</h5>
+            <h5 class="quantity">QUANTITY</h5>
+            <h5 class="total">TOTAL</h5>
+        </div>
+    </div>
+    <hr>
+    <div class="itemscontainer">
+        <div class="items">
+            <ion-icon onclick="cut()" name="close-circle-outline" class="close"></ion-icon>
+            <img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8YnVyZ2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                height="120px" width="110px" alt="">
+            <h3>100 rs/-</h3>
+            <h4>1</h4>
+            <h3>100 Rs-</h3>
+        </div>
+    </div>
+    <div class="itemscontainer">
+        <div class="items">
+            <ion-icon onclick="cut()" name="close-circle-outline" class="close"></ion-icon>
+            <img src="https://eatlittlebird.com/wp-content/uploads/2020/03/angel-food-cake-7.jpg" height="120px"
+                width="110px" alt="">
+            <h3>100 rs/-</h3>
+            <h4>2</h4>
+            <h3>200 Rs-</h3>
+        </div>
+    </div>
+    <div   class="itemscontainer">
+        <div class="items">
+            <ion-icon onclick="cut()"  name="close-circle-outline" class="close atn"></ion-icon>
+            <img src="https://mysolluna.com/wp-content/uploads/2012/02/pepperoni-pizza1.jpg"  height="120px"
+                width="110px" alt="">
+            <h3>100 rs/-</h3>
+            <h4 >1</h4>
+            <h3>100 Rs-</h3>
+        </div>
+    </div>
+    <div class="total">
+        <hr>
+        <h3>500 Rs</h3>
+
+        <div class="con">
+            <button class="btn-makepayment"><a href="/payment.html">Make Payment</a></button>
+    </div>
+
+    </div>
+    <script src="index.js"></script>
+
+</body>
+
+</html>

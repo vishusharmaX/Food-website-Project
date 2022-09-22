@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+.contact{
+  background-color: lightgrey;
+}
+
+.all-link{
+  color: black;
+  text-decoration: none;
+  
+}
+.all-link:hover{
+  color:#219F94;
+  text-decoration: none;
+}
+.front-image{ 
+  width: 100% !important;
+  height: 120% !important;
+  /* padding: auto !important; */
+}
+.myfirstslider{
+  font-family: 'Cormorant SC', serif;
+}
+.heading-text{
+  font-family: 'Lora', serif;
+}
+.matar{
+  width: 250px;
+  height: 250px;
+  border-radius: 5%;
+  
+}
+.dishes-font{
+  font-family: 'Cormorant SC', serif;
+  font-size: 40px;
+}
+
+
+.head{
+  text-align: left;
+}
+.angle{
+  color:#2c3e50;
+  font-weight: 600;
+  font-size: 0.89rem;
+}
+.firstshow{
+  background-color: ghostwhite;
+  border-bottom: 1px solid silver;
+}
+.container-fluid{
+   padding-left: 0;
+   padding-right: 0;
+}
+.gshif{
+  color:#808e9b;
+}
+nav ul li a{
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+* {
+  box-sizing: border-box;
+}
+
+Style the search field
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background:#485460;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #3867d6;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/* Start Footer */
+.full-footer{
+  background-color: #222f3e;
+
+
+}
+.heading-text-1{
+  color: white;
+  font-family: 'Dosis', sans-serif;
+}
+.top-footer p{
+   color: white;
+   
+
+}
+.top-footer a{
+  color: white;
+  font-weight: 600;
+
+}
+.bottom-footer{
+  background-color: black;
+}
+.bottom-footer p{
+  color: white;
+}
+/* End Footer */
+
+
+/* start of About us page */
+.breadcrumps-section{
+  background-color: #f1f1f1;
+  
+}
+.home-newsletter{
+  /* background-color: #004d80; */
+  background: #00D7FF;
+  color: white;
+}
+.home-newsletter .form-control{
+  height: 50px;
+  border-color: transparent;
+  border-radius: 20px 0 0 20px;
+
+}
+.home-newsletter .btn{
+  min-height: 50px;
+  border-radius:  0 20px 20px 0;
+  background: #243c4f;
+  
+  color: #fff;
+
+}
+.team-image{
+  border-radius: 50%;
+  height: 300px;
+  width:550px;
+
+}
+.comapany-fonts{
+font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  margin-left: 50px;
+  text-align: center;
+  text-overflow: hidden;
+}
+/* End of about us page */
+
+
+
+
+
